@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/jquery.jqplot.min.css" integrity="sha512-x1sYGOeCnohzDAuU02Ecjrjcyiy3iYTGGQjuiFenhGpoQsEtK2V+/ELYnOGFjFY7LDx609Ndm6O01CzRBkZsxA==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            
+          </div>
+          <div class="col-sm-8">
+            <div style="margin-top: 8%;">
+
+                <h3>Question1 Equation Solving </h3>
+                    <div class="form-group">
+                      <label for="eq1">Linear Equation (Sample: y = 3x + 3 OR 15 + 6y = 8x  + 10, etc)      </label>
+                      <input type="text" class="form-control" id="eq1" placeholder="Please Enter a Linear equation">
+                    </div>
+                    <p style="float: right;">note: { , ( , ^ not handled</p>
+                      <button id="form__solve" class="btn btn-primary">Solve</button>
+                      <div id="equationformed"></div>
+                 
+            </div>
+            <canvas id="myChart" width="400" height="400"></canvas>
+            <div id="chartdiv" style="height:400px;width:300px; "></div>
+          </div>
+          <div class="col-sm-2">
+            
+          </div>
+        </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/jquery.jqplot.min.js" integrity="sha512-FQKKXM+/7s6LVHU07eH2zShZHunHqkBCIcDqodXfdV/NNXW165npscG8qOHdxVsOM4mJx38Ep1oMBcNXGB3BCw==" crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
